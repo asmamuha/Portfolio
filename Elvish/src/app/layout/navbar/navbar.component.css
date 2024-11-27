@@ -1,0 +1,17 @@
+/* Default: show light logo, hide dark logo */
+.light-logo {
+    display: block;
+  }
+  .dark {
+    display: none;
+  }
+  
+  /* On scroll or dark background: show dark logo, hide light logo */
+  .navbar.scrolled .light-logo {
+    display: none;
+  }
+  .navbar.scrolled .dark {
+    display: block;
+  }
+  
+  

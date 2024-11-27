@@ -1,0 +1,49 @@
+.bg-gallery {
+    background-color: #f8f9fa; /* Adjust background as needed */
+    padding: 50px 0;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamic columns */
+    grid-gap: 20px; /* Space between images */
+    justify-items: center; /* Center the items */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+  
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+  
+  .gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .gallery-hidden {
+    display: none;
+}
+
+/* Style for the "See More" button */
+.see-more-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
